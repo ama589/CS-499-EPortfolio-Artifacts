@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    app:
+    mongodb:
+        image: mongo:latest
+        container_name: mongodb-catSchedApp
+        restart: always
+        ports:
+            - 27017:27017

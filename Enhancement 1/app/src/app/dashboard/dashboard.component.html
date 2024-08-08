@@ -1,0 +1,111 @@
+<html>
+
+<body style="background-color:darkgray;">
+  <div class = "topline">
+
+
+  
+  <h1 class="heading">
+    CATScheduling
+   
+  <div style = "display: flex; justify-content:flex-end">
+    
+   <button routerlink ='/add-contact'>Add Contact</button>
+   <button routerlink ='/add-appointment'>Add Appointment</button>
+   <button routerlink ='/add-task'>Add Task</button>
+     
+
+  </div>
+</h1>
+</div>
+
+<pre>
+<style>
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: darkcyan;
+  
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<table style="width:100%;">
+  <tr>
+    <th colspan="4">Contacts</th>
+  </tr>
+  <tr>
+      <td>First Name</td>
+      <td>Last Name</td>
+      <td>Phone Number</td>
+      <td>Address</td>
+  </tr>
+    
+    <!--fill with information from database-->
+    <!-- * * 
+    <td>{{Contact.firstName}}</td>
+    <td>{{Contact.lastName}}</td>
+    <td>{{Contact.phone}}</td>
+    <td>{{Contact.address}}</td>
+**-->
+</table>
+
+</pre>
+
+<pre>
+  <table style="width:100%;">
+    <tr>
+      <th colspan="3">Appointments</th>
+    </tr>
+    <tr>
+        <td>Date </td>
+        <td>Description</td>
+        <td>Appointment ID</td>
+    </tr>
+    <tr>
+      <!--fill with information from database-->
+    
+        <!--fill with information from database-->
+        <!-- * * 
+        <td>{{Appointment.appointDate}}</td>
+        <td>{{Appointment.appointDescrip}}</td>
+        <td>{{Appointment.appointID}}</td>
+        <td>{{Appointment.address}}</td>
+  **-->
+    </tr>
+  </table>
+</pre>
+
+<pre>
+  <table style="width:100%;">
+    <tr>
+      <th colspan="5">Tasks</th>
+    </tr>
+    <tr>
+        <td>Task ID </td>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Time Left to Complete</td>
+        <td>Done?</td>
+    </tr>
+    <tr>
+      <!--fill with information from database-->
+    
+        <!--fill with information from database-->
+        <!-- * * 
+        <td>{{Task.taskID}}</td>
+        <td>{{Task.taskName}}</td>
+        <td>{{Task.taskDescrip}}</td>
+        calculate time left until date due and display
+        <td>{{Task.timeTillDue}}</td>
+        <td>{{Task.task.Complete}}</td>
+  **-->
+    </tr>
+  </table>
+</pre>
+</body>
+
+
+</html>
