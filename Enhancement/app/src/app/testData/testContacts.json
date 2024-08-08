@@ -1,0 +1,23 @@
+{
+    "testContacts":[
+        {
+            "firstName": "Jon",
+            "lastName": "Snow",
+            "phoneNum": "123-456-7890",
+            "address": "123 Winterfell Ln"
+        },
+        {
+            "firstName": "Daenerys",
+            "lastName": "Targaryen",
+            "phoneNum": "875-364-1873",
+            "address": "485 Dragonstone Ct"
+        },
+
+        {
+            "firstName": "Alicent",
+            "lastName": "Hightower",
+            "phoneNum": "586-142-6842",
+            "address": "975 Old Town Rd"
+        }
+    ]
+}
