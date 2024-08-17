@@ -1,0 +1,56 @@
+<style>
+    h1{background-color: dimgray;
+        color: black;}
+   form{background-color: darkcyan;
+        color: black}
+</style>
+
+
+<h1>Add A Task
+
+    <nav>
+        <div style ="display: flex; justify-content:flex-end;">
+            <button routerLink="/dashboard" >Dashboard</button>
+            
+        </div>
+    </nav>
+</h1>
+
+<form [formGroup]="taskForm" (ngSubmit)="submitForm()">
+    <div>
+        <label for="name">
+            Name
+        </label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+        <label for="descrip">
+            Description
+        </label>
+        <input id="descrip" type="text" formControlName="descrip">
+    </div>
+
+    <div>
+        <label for="dueDate">
+            Due Date
+        </label>
+        <input id="dueDate" type="Date" formControlName="dueDate">
+    </div>
+ <!--
+    <div>
+        <label for="comp">
+            Completed?
+        </label>
+        <input id="comp" type="Boolean" formControlName="comp">
+    </div>
+
+    
+-->
+    
+
+    <button class="button" type="submit" onclick="submitForm()">Save Task</button>
+
+
+
+</form>

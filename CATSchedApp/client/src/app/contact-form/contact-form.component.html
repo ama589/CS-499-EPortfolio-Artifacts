@@ -1,0 +1,60 @@
+<style>
+    h1{background-color: dimgray;
+        color: black;}
+   form{background-color: darkcyan;
+        color: black}
+</style>
+
+
+<h1>Add A Contact
+    <nav>
+        <div style ="display: flex; justify-content:flex-end;">
+            <button routerLink="/dashboard" >Dashboard</button>
+            
+        </div>
+    </nav>
+</h1>
+
+<form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+    <div>
+        <label for="firstName">
+            First Name
+        </label>
+        <input id="firstName" type="text" formControlName="firstName">
+    </div>
+
+    <div>
+        <label for="lastName">
+            Last Name
+        </label>
+        <input id="lastName" type="text" formControlName="lastName">
+    </div>
+
+    <div>
+        <label for="phoneNum">
+            Phone Number
+        </label>
+        <input id="phoneNum" type="text" formControlName="phoneNum">
+    </div>
+
+    <div>
+        <label for="emailAdd">
+            Email Address
+        </label>
+        <input id="emailAdd" type="text" formControlName="emailAdd">
+    </div>
+
+    <div>
+        <label for="physAdd">
+            Home Address
+        </label>
+        <input id="physAdd" type="text" formControlName="physAdd">
+    </div>
+
+    
+
+    <button class="button" onclick="submitForm()" type="submit">Save Contact</button>
+
+
+
+</form>

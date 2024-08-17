@@ -1,0 +1,48 @@
+<style>
+    h1{background-color: dimgray;
+        color: black;}
+   form{background-color: darkcyan;
+        color: black}
+</style>
+
+<h1>Add An Appointment
+
+    <nav>
+        <div style ="display: flex; justify-content:flex-end;">
+            <button routerLink="/dashboard" >Dashboard</button>
+            
+        </div>
+    </nav>
+</h1>
+
+<form [formGroup]="appointForm" (ngSubmit)="submitForm()">
+    <div>
+        <label for="date">
+            Date
+        </label>
+        <input id="date" type="Date" formControlName="date">
+    </div>
+
+    <div>
+        <label for="attends">
+            Attendees
+        </label>
+        <input id="attends" type="text" formControlName="attends">
+    </div>
+
+    <div>
+        <label for="descrip">
+            Description
+        </label>
+        <input id="descrip" type="text" formControlName="descrip">
+    </div>
+
+    
+
+    
+
+    <button class="button" type="submit" onclick="submitForm()">Save Appointment</button>
+
+
+
+</form>
